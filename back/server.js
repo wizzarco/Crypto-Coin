@@ -131,20 +131,20 @@ app.get('/api_back/cryptos/all-cryptocurrency', async (req, res) => {
         const allCurrencyCryptos = Object.keys(data).map(key => {
             const crypto = data[key];
             return {
-                rank: crypto.Rating,
-                image: `https://www.cryptocompare.com${crypto.CoinInfo.ImageUrl}`,
-                symbol: crypto.CoinInfo.Name,
-                fullname: crypto.CoinInfo.FullName,
-                rating: crypto.CoinInfo.MarketPerformanceRating,
-                marketperformance: crypto.CoinInfo.MarketPerformanceRating,
-                maxsupply: crypto.CoinInfo.MaxSupply,
-                top24h: crypto.DISPLAY.USD.TOPTIERVOLUME24HOUR,
-                price: crypto.DISPLAY.USD.PRICE,
-                lastvolume: crypto.DISPLAY.USD.LASTVOLUME,
-                volumehour: crypto.DISPLAY.USD.VOLUMEHOUR,
-                volumeday: crypto.DISPLAY.USD.VOLUMEDAY,
-                volume24h: crypto.DISPLAY.USD.VOLUME24HOUR,
-            };
+                rank: crypto.CoinInfo?.Rating?.Weiss?.Rating || 'N/A',
+                image: `https://www.cryptocompare.com${crypto.CoinInfo?.ImageUrl || ''}`,
+                symbol: crypto.CoinInfo?.Name || 'N/A',
+                fullname: crypto.CoinInfo?.FullName || 'N/A',
+                rating: crypto.CoinInfo?.Rating?.Weiss?.MarketPerformanceRating || 'N/A',
+                marketperformance: crypto.CoinInfo?.Rating?.Weiss?.MarketPerformanceRating || 'N/A',
+                maxsupply: crypto.CoinInfo?.MaxSupply || 'N/A',
+                top24h: crypto.RAW?.USD?.TOPTIERVOLUME24HOUR || 'N/A',
+                price: crypto.RAW?.USD?.PRICE || 'N/A',
+                lastvolume: crypto.RAW?.USD?.LASTVOLUME || 'N/A',
+                volumehour: crypto.RAW?.USD?.VOLUMEHOUR || 'N/A',
+                volumeday: crypto.RAW?.USD?.VOLUMEDAY || 'N/A',
+                volume24h: crypto.RAW?.USD?.VOLUME24HOUR || 'N/A',
+            };            
         });
 
         wss.clients.forEach((client) => {
@@ -179,7 +179,7 @@ app.get('/api_back/cryptos/all-exchanges', async (req, res) => {
                 marketquality: exchange.GradePointsSplit.MarketQuality,
                 negativereport: exchange.GradePointsSplit.NegativeReportsPenalty,
                 country: exchange.Country,
-                volume24h: exchange.DISPLAYTOTALVOLUME24H,
+                volume24h: exchange.TOTALVOLUME24H,
                 rating: {
                     one: exchange.Rating.One,
                     two: exchange.Rating.Two,

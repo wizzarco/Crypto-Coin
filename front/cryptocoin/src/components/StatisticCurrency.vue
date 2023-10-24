@@ -141,7 +141,7 @@
 
     const cryptocurrencies = ref([]);
     const currentPage = ref(1);
-    const totalPage = ref(151);
+    const totalPage = ref(162);
     const sortedCryptocurrencies = ref([]);
 
     const loadPage = async (page) => {
