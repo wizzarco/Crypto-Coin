@@ -17,7 +17,7 @@
               <div>
                 <h3 class="text-base font-medium text-gray-900">Pages</h3>
                 <ul role="list" class="mt-4 space-y-4">
-                  <li v-for="item in navigation.solutions" :key="item.name">
+                  <li v-for="item in navigation.pages" :key="item.name">
                     <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">{{ item.name }}</a>
                   </li>
                 </ul>
@@ -31,28 +31,19 @@
                 </ul>
               </div>
             </div>
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 class="text-base font-medium text-gray-900">Teams</h3>
-                <ul role="list" class="mt-4 space-y-4">
-                  <li v-for="item in navigation.company" :key="item.name">
-                    <a :href="item.href" target="_blank" class="text-base text-gray-500 hover:text-gray-900">{{ item.name }}</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="mt-12 md:mt-0">
-                <h3 class="text-base font-medium text-gray-900">Legal</h3>
-                <ul role="list" class="mt-4 space-y-4">
-                  <li v-for="item in navigation.legal" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">{{ item.name }}</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="mt-12 md:mt-0">
+              <h3 class="text-base font-medium text-gray-900">Legal</h3>
+              <ul role="list" class="mt-4 space-y-4">
+                <li v-for="item in navigation.legal" :key="item.name">
+                  <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">{{ item.name }}</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="mt-12 border-t border-gray-200 pt-8">
-          <p class="text-base text-gray-400 xl:text-center">&copy; 2022 Crypto Coin, Inc. All rights reserved.</p>
+        <div class="mt-12 border-t border-gray-200 pt-8 text-center">
+          <p class="text-base text-gray-400">&copy; 2023 Crypto Coin, Inc. All rights reserved.</p>
+          <a href="https://wizzarco.com" target="_blank" class="text-base text-gray-400 hover:text-sky-600 hover:underline">Design and created by WizzarCo.</a>
         </div>
       </div>
     </footer>
@@ -62,7 +53,7 @@
   import { defineComponent, h } from 'vue'
   
   const navigation = {
-    solutions: [
+    pages: [
       { name: 'Cryptocurrency', href: '/cryptocurrency' },
       { name: 'Exchanges', href: '/exchanges' },
       { name: 'Announcing', href: '/announcing' },
@@ -70,12 +61,6 @@
     support: [
       { name: 'Contact', href: '/contact' },
       { name: 'FAQ', href: '/faq' },
-    ],
-    company: [
-      { name: 'STORTZ Loïc', href: 'https://github.com/wizzarco' },
-      { name: 'CHARDEY Arthur', href: 'https://github.com/Arthur-de-Riv' },
-      { name: 'DE SOUZA Patrick', href: '#' },
-      { name: 'JEGOUDEZ Alban', href: 'https://github.com/Bolobi2' },
     ],
     legal: [
       { name: 'Claim', href: '#' },
@@ -85,7 +70,7 @@
     social: [
       {
         name: 'GitHub',
-        href: 'https://github.com/EpitechMscProPromo2024/T-WEB-700-NCY_3',
+        href: 'https://github.com/wizzarco/Crypto-Coin',
         icon: defineComponent({
           render: () =>
             h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [

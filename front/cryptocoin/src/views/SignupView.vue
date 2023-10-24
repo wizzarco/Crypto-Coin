@@ -40,27 +40,27 @@
                 <!--<div class="flex items-center justify-between">
                     <div class="flex items-center">
                         <input id="remember_me" name="remember_me" type="checkbox"
-                        class="h-4 w-4 bg-white focus:ring-blue-400 border-gray-300 rounded">
+                        class="h-4 w-4 bg-white focus:ring-sky-400 border-gray-300 rounded">
                         <label for="remember_me" class="ml-2 block text-sm text-gray-900">
                         Remember me
                         </label>
                     </div>
                     <div class="text-sm">
-                        <a href="#" class="text-indigo-400 hover:text-blue-500">
+                        <a href="#" class="text-indigo-400 hover:text-sky-500">
                         Forgot your password?
                         </a>
                     </div>
                 </div>-->
                 <div>
                 <button @click="register"
-                    class="w-full flex justify-center bg-gradient-to-r from-indigo-500 to-blue-600  hover:bg-gradient-to-l hover:from-blue-500 hover:to-indigo-600 text-gray-100 p-4  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500">
+                    class="w-full flex justify-center bg-gradient-to-r from-indigo-500 to-sky-600  hover:bg-gradient-to-l hover:from-sky-500 hover:to-indigo-600 text-gray-100 p-4  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500">
                     Signup
                 </button>
                 </div>
                 <p class="flex flex-col items-center justify-center mt-10 text-center text-md text-gray-500">
                 <span>You have an account?</span>
                 <a href="/login"
-                    class="text-indigo-400 hover:text-blue-500 no-underline hover:underline cursor-pointer transition ease-in duration-300">Login</a>
+                    class="text-indigo-400 hover:text-sky-500 no-underline hover:underline cursor-pointer transition ease-in duration-300">Login</a>
                 </p>
           </div>
           <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-43rem)]">
@@ -76,7 +76,7 @@
           </div>
       </div>
       <div class="sm:w-1/2 xl:w-3/5 h-screen hidden md:flex flex-auto items-center justify-center p-10 overflow-hidden text-white bg-no-repeat bg-cover relative" style="background-image: url(img/bg_login.jpeg);">
-          <div class="absolute bg-gradient-to-b from-indigo-600 to-blue-500 opacity-75 inset-0 z-0"></div>
+          <div class="absolute bg-gradient-to-b from-indigo-600 to-sky-500 opacity-75 inset-0 z-0"></div>
           <div class="w-full  max-w-md z-10">
           <img data-aos="fade-right" data-aos-delay="400" data-aos-once="true" src="img/signup.webp" class="-mt-4 h-72"/>
           <div data-aos="fade-right" data-aos-delay="400" data-aos-once="true" class="sm:text-4xl xl:text-5xl font-bold leading-tight mb-6">Cryptocoin</div>

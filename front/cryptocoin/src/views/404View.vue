@@ -18,11 +18,11 @@
                   <img src="img/pattern/star.png" class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"/>
                 <div class="py-16">
                     <div class="text-center">
-                    <p class="text-xl font-semibold text-blue-600">404</p>
+                    <p class="text-xl font-semibold text-sky-600">404</p>
                     <h1 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Page not found.</h1>
                     <p class="mt-2 text-base text-gray-500">Sorry, we couldn’t find the page you’re looking for.</p>
                     <div class="mt-6">
-                        <a href="/" class="text-base font-medium text-blue-600 hover:text-blue-500">
+                        <a href="/" class="text-base font-medium text-sky-600 hover:text-sky-500">
                         Go back home
                         <span aria-hidden="true"> &rarr;</span>
                         </a>

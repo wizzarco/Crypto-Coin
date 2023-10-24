@@ -25,7 +25,7 @@
         <div class="max-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <div class="max-w-xl">
                 <h2 data-aos="fade-up" data-aos-once="true" id="faq-heading" class="text-2xl font-bold tracking-tight text-gray-900">Frequently asked questions</h2>
-                <p data-aos="fade-left" data-aos-delay="200" data-aos-once="true" class="mt-4 text-base text-gray-500">Questions. Frequently asked ones. Plus our answers. That's how FAQs work. If you can't find what you're looking for, you can always <a href="/contact" class="font-medium text-blue-600 hover:text-blue-500">send us an email</a> with your enquiry.</p>
+                <p data-aos="fade-left" data-aos-delay="200" data-aos-once="true" class="mt-4 text-base text-gray-500">Questions. Frequently asked ones. Plus our answers. That's how FAQs work. If you can't find what you're looking for, you can always <a href="/contact" class="font-medium text-sky-600 hover:text-sky-500">send us an email</a> with your enquiry.</p>
             </div>
 
             <dl data-aos="fade-down" data-aos-delay="400" data-aos-once="true" class="mt-12 grid grid-cols-1 gap-y-10 sm:mt-16 md:grid-cols-2 md:gap-x-6 lg:grid-cols-3">

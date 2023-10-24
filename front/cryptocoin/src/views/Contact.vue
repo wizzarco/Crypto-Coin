@@ -48,44 +48,44 @@
             <div>
               <label for="first-name" class="block text-sm font-medium text-gray-700">First name *</label>
               <div class="mt-1">
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500">
               </div>
             </div>
             <div>
               <label for="last-name" class="block text-sm font-medium text-gray-700">Last name *</label>
               <div class="mt-1">
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500">
               </div>
             </div>
             <div class="sm:col-span-2">
               <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
               <div class="mt-1">
-                <input type="text" name="company" id="company" autocomplete="organization" placeholder="Optionnal" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                <input type="text" name="company" id="company" autocomplete="organization" placeholder="Optionnal" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500">
               </div>
             </div>
             <div class="sm:col-span-2">
               <label for="email" class="block text-sm font-medium text-gray-700">Email *</label>
               <div class="mt-1">
-                <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500">
               </div>
             </div>
             <div class="sm:col-span-2">
               <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
               <div class="relative mt-1 rounded-md shadow-sm">
-                <input type="text" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="+33 6 06 06 06 06">
+                <input type="text" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500" placeholder="+33 6 06 06 06 06">
               </div>
             </div>
             <div class="sm:col-span-2">
               <label for="message" class="block text-sm font-medium text-gray-700">Message *</label>
               <div class="mt-1">
-                <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+                <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500"></textarea>
               </div>
             </div>
             <p class="text-xs font-semibold">* Input is required</p>
             <div class="sm:col-span-2">
               <div class="flex items-start">
                 <div class="flex-shrink-0">
-                  <button type="button" class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" role="switch" aria-checked="false">
+                  <button type="button" class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2" role="switch" aria-checked="false">
                     <span class="sr-only">Agree to policies</span>
                     <span aria-hidden="true" class="translate-x-0 inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
                   </button>
@@ -101,7 +101,7 @@
               </div>
             </div>
             <div class="sm:col-span-2">
-              <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Let's talk</button>
+              <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-sky-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">Let's talk</button>
             </div>
           </form>
         </div>

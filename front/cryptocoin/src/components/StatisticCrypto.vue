@@ -7,10 +7,10 @@
           <div class="rounded-t mb-0 px-4 py-3 border-0">
             <div class="flex flex-wrap items-center">
               <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-                <h3 class="font-semibold text-base text-blueGray-700">🔥 Top Trending</h3>
+                <h3 class="font-semibold text-base text-skyGray-700">🔥 Top Trending</h3>
               </div>
               <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                <a v-if="this.$route.name != 'cryptocurrency'" href="/cryptocurrency"><button class="bg-blue-500 text-white active:bg-blue-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">See all</button></a>
+                <a v-if="this.$route.name != 'cryptocurrency'" href="/cryptocurrency"><button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">See all</button></a>
               </div>
             </div>
           </div>
@@ -19,18 +19,18 @@
             <table class="items-center bg-transparent w-full border-collapse">
               <thead>
                 <tr>
-                  <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
-                  <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Market Performance</th>
-                  <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Price</th>
+                  <th class="px-6 bg-skyGray-50 text-skyGray-500 align-middle border border-solid border-skyGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
+                  <th class="px-6 bg-skyGray-50 text-skyGray-500 align-middle border border-solid border-skyGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Market Performance</th>
+                  <th class="px-6 bg-skyGray-50 text-skyGray-500 align-middle border border-solid border-skyGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Price</th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="(cryptostat, index) in topTrending.slice(0, 3)" :key="cryptostat.symbol" class="text-sm">
-                  <th class="border-b-0 hover:text-gray-800 px-6 align-middle border border-solid border-blueGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 text-left flex items-center text-blueGray-700">
+                  <th class="border-b-0 hover:text-gray-800 px-6 align-middle border border-solid border-skyGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 text-left flex items-center text-skyGray-700">
                     <img :src="cryptostat.image" class="mr-2 h-5"/><a href="#">{{ cryptostat.name }}</a>
                   </th>
-                  <td class="border-b-0 px-6 align-middle border border-solid border-blueGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 ">{{ cryptostat.marketperformance }}</td>
-                  <td class="border-b-0 px-6 align-middle border border-solid border-blueGray-100 border-l-0 border-r-0 whitespace-nowrap p-4">
+                  <td class="border-b-0 px-6 align-middle border border-solid border-skyGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 ">{{ cryptostat.marketperformance }}</td>
+                  <td class="border-b-0 px-6 align-middle border border-solid border-skyGray-100 border-l-0 border-r-0 whitespace-nowrap p-4">
                     <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>{{ cryptostat.price }}
                   </td>
                 </tr>
@@ -44,10 +44,10 @@
           <div class="rounded-t mb-0 px-4 py-3 border-0">
             <div class="flex flex-wrap items-center">
               <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-                <h3 class="font-semibold text-base text-blueGray-700">🚀 Top Gainers</h3>
+                <h3 class="font-semibold text-base text-skyGray-700">🚀 Top Gainers</h3>
               </div>
               <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                <a v-if="this.$route.name != 'cryptocurrency'" href="/cryptocurrency"><button class="bg-blue-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">See all</button></a>
+                <a v-if="this.$route.name != 'cryptocurrency'" href="/cryptocurrency"><button class="bg-sky-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">See all</button></a>
               </div>
             </div>
           </div>
@@ -56,18 +56,18 @@
             <table class="items-center bg-transparent w-full border-collapse ">
               <thead>
                 <tr>
-                  <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
-                  <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Price</th>
-                  <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Market Cap</th>
+                  <th class="px-6 bg-skyGray-50 text-skyGray-500 align-middle border border-solid border-skyGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
+                  <th class="px-6 bg-skyGray-50 text-skyGray-500 align-middle border border-solid border-skyGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Price</th>
+                  <th class="px-6 bg-skyGray-50 text-skyGray-500 align-middle border border-solid border-skyGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Market Cap</th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="(cryptostat, index) in topGainers.slice(0, 3)" :key="cryptostat.symbol" class="text-sm">
-                  <th class="border-b-0 hover:text-gray-800 px-6 align-middle border border-solid border-blueGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 text-left flex items-center text-blueGray-700">
+                  <th class="border-b-0 hover:text-gray-800 px-6 align-middle border border-solid border-skyGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 text-left flex items-center text-skyGray-700">
                     <img :src="cryptostat.image" class="mr-2 h-5"/><a href="#">{{ cryptostat.name }}</a>
                   </th>
-                  <td class="border-b-0 px-6 align-middle border border-solid border-blueGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 ">{{ cryptostat.price }}</td>
-                  <td class="border-b-0 px-6 align-middle border border-solid border-blueGray-100 border-l-0 border-r-0 whitespace-nowrap p-4">
+                  <td class="border-b-0 px-6 align-middle border border-solid border-skyGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 ">{{ cryptostat.price }}</td>
+                  <td class="border-b-0 px-6 align-middle border border-solid border-skyGray-100 border-l-0 border-r-0 whitespace-nowrap p-4">
                     <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>{{ cryptostat.market_cap }}
                   </td>
                 </tr>
@@ -81,10 +81,10 @@
           <div class="rounded-t mb-0 px-4 py-3 border-0">
             <div class="flex flex-wrap items-center">
               <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-                <h3 class="font-semibold text-base text-blueGray-700">💎 Total mining</h3>
+                <h3 class="font-semibold text-base text-skyGray-700">💎 Total mining</h3>
               </div>
               <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                <a v-if="this.$route.name != 'cryptocurrency'" href="/cryptocurrency"><button class="bg-blue-500 text-white active:bg-blue-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">See all</button></a>
+                <a v-if="this.$route.name != 'cryptocurrency'" href="/cryptocurrency"><button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">See all</button></a>
               </div>
             </div>
           </div>
@@ -93,18 +93,18 @@
             <table class="items-center bg-transparent w-full border-collapse ">
               <thead>
                 <tr>
-                  <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
-                  <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Block Reward</th>
-                  <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Total mining</th>
+                  <th class="px-6 bg-skyGray-50 text-skyGray-500 align-middle border border-solid border-skyGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
+                  <th class="px-6 bg-skyGray-50 text-skyGray-500 align-middle border border-solid border-skyGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Block Reward</th>
+                  <th class="px-6 bg-skyGray-50 text-skyGray-500 align-middle border border-solid border-skyGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Total mining</th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="(cryptostat, index) in totalMining.slice(0, 3)" :key="cryptostat.symbol" class="text-sm">
-                  <th class="border-b-0 hover:text-gray-800 px-6 align-middle border border-solid border-blueGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 text-left flex items-center text-blueGray-700">
+                  <th class="border-b-0 hover:text-gray-800 px-6 align-middle border border-solid border-skyGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 text-left flex items-center text-skyGray-700">
                     <img :src="cryptostat.image" class="mr-2 h-5"/><a href="#">{{ cryptostat.name }}</a>
                   </th>
-                  <td class="border-b-0 px-6 align-middle border border-solid border-blueGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 ">{{ cryptostat.blockreward }}</td>
-                  <td class="border-b-0 px-6 align-middle border border-solid border-blueGray-100 border-l-0 border-r-0 whitespace-nowrap p-4">
+                  <td class="border-b-0 px-6 align-middle border border-solid border-skyGray-100 border-l-0 border-r-0 whitespace-nowrap p-4 ">{{ cryptostat.blockreward }}</td>
+                  <td class="border-b-0 px-6 align-middle border border-solid border-skyGray-100 border-l-0 border-r-0 whitespace-nowrap p-4">
                     <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>{{ cryptostat.totalmining }}
                   </td>
                 </tr>

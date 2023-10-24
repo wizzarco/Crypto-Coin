@@ -24,7 +24,7 @@
             <div class="hidden sm:mb-8 sm:flex sm:justify-center">
               <div class="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 <span class="animate-pulse text-gray-600">
-                  Stay connected by subscribing to the <button @click="open = true" ref="openButtonRef" type="button" class="font-semibold text-blue-600"><span class="absolute inset-0" aria-hidden="true" />Newsletter <span aria-hidden="true">&rarr;</span></button>
+                  Stay connected by subscribing to the <button @click="open = true" ref="openButtonRef" type="button" class="font-semibold text-sky-600"><span class="absolute inset-0" aria-hidden="true" />Newsletter <span aria-hidden="true">&rarr;</span></button>
                 </span>
               </div>
             </div>
@@ -36,7 +36,7 @@
                   <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-3.png" class="hidden sm:block absolute bottom-56 right-24 w-6"/>
                   <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/star.png" class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"/>
               </div>
-              <h1 data-aos="zoom-in" class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">The World's <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Fastest Growing</span> Crypto Web App</h1>
+              <h1 data-aos="zoom-in" class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">The World's <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-sky-500">Fastest Growing</span> Crypto Web App</h1>
               <p data-aos="fade-up" data-aos-once="true" data-aos-delay="700" class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">Consult CryptoCoin and follow live the price of the main cryptocurrencies. Evolution over 24 hours, volumes, capitalization, evolution of euro/dollar prices in real time.</p>
             </div>
             <!-- Background du bas -->
@@ -61,7 +61,7 @@
     
     <!-- View all Exchanges -->
     <div>
-        <center><a href="/exchanges"><button class="py-2 px-4 bg-transparent mt-8 text-blue-600 font-semibold border border-blue-600 rounded hover:bg-blue-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0">View all Exchanges</button></a></center>
+        <center><a href="/exchanges"><button class="py-2 px-4 bg-transparent mt-8 text-sky-600 font-semibold border border-sky-600 rounded hover:bg-sky-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0">View all Exchanges</button></a></center>
     </div>
 
     <!-- Advanced trading tools -->
@@ -74,7 +74,7 @@
           </div>
         </div>
         <div data-aos="fade-right" data-aos-once="true" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
-          <h2 class="text-4xl font-semibold">Advanced Trading <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Tools</span></h2>
+          <h2 class="text-4xl font-semibold">Advanced Trading <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-sky-500">Tools</span></h2>
           <div class="space-y-2">
             <h4 class="text-lg font-medium">Professional Access, Non-stop Availability</h4>
             <p class="paragraph text-sm xl:text-base">
@@ -97,7 +97,7 @@
             </p>
           </div>
           <div class="flex flex-col sm:flex-row">
-            <button class="px-4 py-2 bg-transparent outline-none border-2 border-blue-400 rounded text-blue-500 font-medium active:scale-95 hover:bg-blue-600 hover:text-white hover:border-transparent focus:bg-blue-600 focus:text-white focus:border-transparent focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200">Get Started</button>
+            <button class="px-4 py-2 bg-transparent outline-none border-2 border-sky-400 rounded text-sky-500 font-medium active:scale-95 hover:bg-sky-600 hover:text-white hover:border-transparent focus:bg-sky-600 focus:text-white focus:border-transparent focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200">Get Started</button>
           </div>
         </div>
         <!-- Icon de la section -->
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div data-aos="fade-left" data-aos-once="true" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
-          <h2 class="text-4xl font-semibold">Industry-leading <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Security</span></h2>
+          <h2 class="text-4xl font-semibold">Industry-leading <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-sky-500">Security</span></h2>
           <ul class="space-y-8 sm:space-y-4">
             <h4 class="text-lg font-medium">Safety, security and compliance</h4>
               <p class="paragraph text-sm xl:text-base">
@@ -174,14 +174,14 @@
 
     <!-- Blogs -->
     <div data-aos="zoom-out" data-aos-delay="500" data-aos-once="true" class="mx-auto max-w-7xl pb-12 px-4 sm:px-6 lg:px-8">
-      <div class="overflow-hidden rounded-lg bg-blue-700 shadow-xl lg:grid lg:grid-cols-2 lg:gap-4">
+      <div class="overflow-hidden rounded-lg bg-sky-700 shadow-xl lg:grid lg:grid-cols-2 lg:gap-4">
         <div class="px-6 pt-10 pb-12 sm:px-16 sm:pt-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
           <div class="lg:self-center">
             <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               <span class="block">Announcing</span>
             </h2>
-            <p class="mt-4 text-lg leading-6 text-blue-200">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
-            <a href="/announcing" class="mt-8 inline-flex items-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-blue-600 shadow hover:bg-blue-50">See all announcing</a>
+            <p class="mt-4 text-lg leading-6 text-sky-200">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+            <a href="/announcing" class="mt-8 inline-flex items-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-sky-600 shadow hover:bg-sky-50">See all announcing</a>
           </div>
         </div>
         <div class="aspect-w-5 aspect-h-3 -mt-6 md:aspect-w-2 md:aspect-h-1">
@@ -202,20 +202,20 @@
       <div class="fixed inset-0 z-10 justify-center mt-72">
         <TransitionChild as="template" enter="ease-out duration-200" enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" enter-to="opacity-100 translate-y-0 sm:scale-100" leave="ease-in duration-200" leave-from="opacity-100 translate-y-0 sm:scale-100" leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
           <DialogPanel class="relative transform overflow-hidden rounded-lg mx-auto max-w-7xl text-left transition-all sm:my-8">
-            <div class="rounded-3xl bg-blue-700 py-10 px-6 sm:py-16 sm:px-12 lg:flex lg:items-center lg:p-20">
+            <div class="rounded-3xl bg-sky-700 py-10 px-6 sm:py-16 sm:px-12 lg:flex lg:items-center lg:p-20">
               <button @click="open = false" ref="cancelButtonRef" type="button" class="absolute top-0 right-0 mr-2 mt-2 text-white bg-transparent hover:text-gray-200 text-sm p-1.5 ml-auto inline-flex items-center" data-modal-toggle="staticModal">
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
               </button>
               <div class="lg:w-0 lg:flex-1">
                 <h2 class="text-3xl font-bold tracking-tight text-white">Sign up for our newsletter</h2>
-                <p class="mt-4 max-w-3xl text-lg text-blue-100">Get crypto analysis, news and updates right to your inbox! Sign up here so you don't miss a single newsletter.</p>
+                <p class="mt-4 max-w-3xl text-lg text-sky-100">Get crypto analysis, news and updates right to your inbox! Sign up here so you don't miss a single newsletter.</p>
               </div>
               <div class="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
                 <form class="sm:flex">
-                  <input id="EMAIL" name="EMAIL" type="email" autocomplete="email" required class="w-full rounded-md border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-700" placeholder="Enter your email" />
-                  <button type="submit" class="mt-3 flex w-full items-center justify-center rounded-md border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-700 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">Notify me</button>
+                  <input id="EMAIL" name="EMAIL" type="email" autocomplete="email" required class="w-full rounded-md border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sky-700" placeholder="Enter your email" />
+                  <button type="submit" class="mt-3 flex w-full items-center justify-center rounded-md border border-transparent bg-sky-500 px-5 py-3 text-base font-medium text-white hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sky-700 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">Notify me</button>
                 </form>
-                <p class="mt-3 text-sm text-blue-100">
+                <p class="mt-3 text-sm text-sky-100">
                   We care about the protection of your data. Read our
                   {{ ' ' }}
                   <a href="#" class="font-medium text-white underline">Privacy Policy.</a>

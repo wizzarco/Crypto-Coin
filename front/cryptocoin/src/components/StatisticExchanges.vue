@@ -5,13 +5,13 @@
                 <div class="rounded-t mb-0 px-4 py-3 border-0">
                 <div class="flex flex-wrap items-center">
                     <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-                    <h3 class="font-semibold text-base text-blueGray-700">Watchlist</h3>
+                    <h3 class="font-semibold text-base text-sky-700">Watchlist</h3>
                     </div>
                     <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                        <button class="bg-blue-500 text-white active:bg-blue-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Spot</button>
-                        <button class="bg-blue-500 text-white active:bg-blue-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Derivatives</button>
-                        <button class="bg-blue-500 text-white active:bg-blue-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">DEX</button>
-                        <button class="bg-blue-500 text-white active:bg-blue-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Lending</button>
+                        <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Spot</button>
+                        <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Derivatives</button>
+                        <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">DEX</button>
+                        <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Lending</button>
                     </div>
                 </div>
                 </div>
@@ -21,36 +21,36 @@
                     <!-- Ce que contient la tables des exchanges -->
                     <thead>
                         <tr>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Exchange Score</th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Volume (24h)</th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Avg. Liquidity</th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Weekly Visits</th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Markets</th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Coins</th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Fiat Supported</th>
-                            <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Volume Graph (7d)</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Exchange Score</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Volume (24h)</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Avg. Liquidity</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Weekly Visits</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Markets</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Coins</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Fiat Supported</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Volume Graph (7d)</th>
                         </tr>
                     </thead>
 
                     <!-- Contents de la table -->
                     <tbody>
                         <tr v-for="cryptoexchange in cryptoexchanges" class="hover:bg-gray-100">
-                            <th class="border-t-0 px-6 align-middle border border-solid border-blueGray-100 text-sm border-l-0 border-r-0 whitespace-nowrap p-4 text-left flex items-center text-blueGray-700">
+                            <th class="border-t-0 px-6 align-middle border border-solid border-sky-100 text-sm border-l-0 border-r-0 whitespace-nowrap p-4 text-left flex items-center text-sky-700">
                             <img :src="cryptoexchange.img" class="mr-2"/><a href="#">{{ cryptoexchange.name }}</a></th>
-                            <td class="border-t-0 border border-solid border-blueGray-100 px-6 align-middle border-l-0 border-r-0 text-sm whitespace-nowrap p-4">
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-middle border-l-0 border-r-0 text-sm whitespace-nowrap p-4">
                                 <span class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
                                     <span aria-hidden class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
                                     <span class="relative">{{ cryptoexchange.score }}</span>
                                 </span>
                             </td>
-                            <td class="border-t-0 border border-solid border-blueGray-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.volume }}</td>
-                            <td class="border-t-0 border border-solid border-blueGray-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.liquidity }}</td>
-                            <td class="border-t-0 border border-solid border-blueGray-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.visits }}</td>
-                            <td class="border-t-0 border border-solid border-blueGray-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.market }}</td>
-                            <td class="border-t-0 border border-solid border-blueGray-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.coins }}</td>
-                            <td class="border-t-0 border border-solid border-blueGray-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.fiat }}</td>
-                            <td class="border-t-0 border border-solid border-blueGray-100 x-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4"></td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.volume }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.liquidity }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.visits }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.market }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.coins }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.fiat }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 x-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4"></td>
                         </tr>
                     </tbody>
 
@@ -85,7 +85,7 @@
                 </a>
             </div>
             <div class="hidden md:-mt-px md:flex">
-                <a href="#" class="inline-flex items-center border-t-2 border-blue-500 px-4 pt-4 text-sm font-medium text-blue-600">1</a>
+                <a href="#" class="inline-flex items-center border-t-2 border-sky-500 px-4 pt-4 text-sm font-medium text-sky-600">1</a>
                 <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">2</a>
                 <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">3</a>
                 <span class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">...</span>
