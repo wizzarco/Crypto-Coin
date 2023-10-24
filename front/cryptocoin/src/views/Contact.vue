@@ -18,10 +18,10 @@
 
     <!-- Contact -->
     <div class="overflow-hidden py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
-      <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/ellipse-3.png" class="hidden sm:block absolute ml-8 mb-8 bottom-40 left-4 xl:left-0 w-6"/>
-      <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/ellipse-1.png" class="hidden sm:block absolute top-4 sm:top-40 right-64 sm:right-96 xl:right-[32rem] w-6"/>
-      <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/ellipse-2.png" class="hidden sm:block absolute bottom-56 right-24 w-6"/>
-      <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/star.png" class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"/>
+      <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-3.png" class="hidden sm:block absolute ml-8 mb-8 bottom-40 left-4 xl:left-0 w-6"/>
+      <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-1.png" class="hidden sm:block absolute top-4 sm:top-40 right-64 sm:right-96 xl:right-[32rem] w-6"/>
+      <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-2.png" class="hidden sm:block absolute bottom-56 right-24 w-6"/>
+      <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/star.png" class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"/>
       <div class="relative mx-auto max-w-xl">
         <svg class="absolute left-full translate-x-1/2 transform" width="404" height="404" fill="none" viewBox="0 0 404 404" aria-hidden="true">
           <defs>
@@ -40,11 +40,11 @@
           <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
         </svg>
         <div class="text-center">
-          <h2 data-aos="fade-up" data-aos-delay="200" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
-          <p data-aos="fade-up" data-aos-delay="300" class="mt-4 text-lg leading-6 text-gray-500">Fill the contact for if you have any question about CryptoCoin.</p>
+          <h2 data-aos="fade-up" data-aos-delay="200" data-aos-once="true" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact</h2>
+          <p data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="mt-4 text-lg leading-6 text-gray-500">Fill the contact for if you have any question about CryptoCoin.</p>
         </div>
         <div class="mt-12">
-          <form data-aos="zoom-in" data-aos-delay="500" action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+          <form data-aos="zoom-in" data-aos-delay="500" data-aos-once="true" action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
             <div>
               <label for="first-name" class="block text-sm font-medium text-gray-700">First name *</label>
               <div class="mt-1">

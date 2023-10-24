@@ -31,10 +31,10 @@
             <div>
               <div class="hidden sm:block col-span-12 lg:col-span-6">
                   <center><img src="img/hero-image.webp" class="-mt-4 w-40 h-40"/></center>
-                  <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/ellipse-1.png" class="hidden sm:block absolute ml-8 mb-8 bottom-40 xl:bottom-16 left-4 xl:left-0 w-6"/>
-                  <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/ellipse-2.png" class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"/>
-                  <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/ellipse-3.png" class="hidden sm:block absolute bottom-56 right-24 w-6"/>
-                  <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/star.png" class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"/>
+                  <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-1.png" class="hidden sm:block absolute ml-8 mb-8 bottom-40 xl:bottom-16 left-4 xl:left-0 w-6"/>
+                  <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-2.png" class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"/>
+                  <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-3.png" class="hidden sm:block absolute bottom-56 right-24 w-6"/>
+                  <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/star.png" class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"/>
               </div>
               <h1 data-aos="zoom-in" class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">The World's <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Fastest Growing</span> Crypto Web App</h1>
               <p data-aos="fade-up" data-aos-once="true" data-aos-delay="700" class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">Consult CryptoCoin and follow live the price of the main cryptocurrencies. Evolution over 24 hours, volumes, capitalization, evolution of euro/dollar prices in real time.</p>
@@ -68,12 +68,12 @@
     <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
         <!-- Icon de la section MOBILE -->
-        <div data-aos="fade-left" class="col-span-12 lg:col-span-6 sm:hidden" v-bind="$attrs">
+        <div data-aos="fade-left" data-aos-once="true" class="col-span-12 lg:col-span-6 sm:hidden" v-bind="$attrs">
           <div class="w-full sm:mt-20 xl:mt-0">
             <img src="img/advanced-trading-tools.webp" class="w-full"/>
           </div>
         </div>
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
+        <div data-aos="fade-right" data-aos-once="true" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
           <h2 class="text-4xl font-semibold">Advanced Trading <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Tools</span></h2>
           <div class="space-y-2">
             <h4 class="text-lg font-medium">Professional Access, Non-stop Availability</h4>
@@ -101,7 +101,7 @@
           </div>
         </div>
         <!-- Icon de la section -->
-        <div data-aos="fade-left" class="col-span-12 lg:col-span-6 hidden sm:block" v-bind="$attrs">
+        <div data-aos="fade-left" data-aos-once="true" class="col-span-12 lg:col-span-6 hidden sm:block" v-bind="$attrs">
           <div class="w-full sm:mt-20 xl:mt-0">
             <img src="img/advanced-trading-tools.webp" class="w-full" alt="" />
           </div>
@@ -112,12 +112,12 @@
     <!-- Security -->
     <section class="w-full my-24">
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
+        <div data-aos="fade-right" data-aos-once="true" class="col-span-12 lg:col-span-6">
           <div class="w-full">
             <img src="img/industry-leading-security.webp" class="w-full" alt="" />
           </div>
         </div>
-        <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
+        <div data-aos="fade-left" data-aos-once="true" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
           <h2 class="text-4xl font-semibold">Industry-leading <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Security</span></h2>
           <ul class="space-y-8 sm:space-y-4">
             <h4 class="text-lg font-medium">Safety, security and compliance</h4>
@@ -140,10 +140,10 @@
     <!-- Get started -->
     <section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
       <div class="w-full py-16 flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
+        <h2 data-aos="flip-down" data-aos-once="true" class="text-3xl sm:text-4xl font-semibold text-center">
           Get started in just a few minutes
         </h2>
-        <div data-aos="fade-up" class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8">
+        <div data-aos="fade-up" data-aos-once="true" class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8">
           <div class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center">
             <img src="img/icon-started/signup.png" class="max-w-[245px] mx-auto" alt="" />
             <h3 class="text-xl text-neutral-800 font-semibold">Sign Up</h3>
@@ -173,7 +173,7 @@
 
 
     <!-- Blogs -->
-    <div data-aos="zoom-out" data-aos-delay="500" class="mx-auto max-w-7xl pb-12 px-4 sm:px-6 lg:px-8">
+    <div data-aos="zoom-out" data-aos-delay="500" data-aos-once="true" class="mx-auto max-w-7xl pb-12 px-4 sm:px-6 lg:px-8">
       <div class="overflow-hidden rounded-lg bg-blue-700 shadow-xl lg:grid lg:grid-cols-2 lg:gap-4">
         <div class="px-6 pt-10 pb-12 sm:px-16 sm:pt-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
           <div class="lg:self-center">

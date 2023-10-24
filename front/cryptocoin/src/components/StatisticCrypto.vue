@@ -1,9 +1,9 @@
 <template>
-    <section data-aos="fade-up" class="max-w-screen-xl mx-2 sm:mx-auto mt-4 py-6 sm:py-6 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12">
+    <section data-aos="fade-up" data-aos-once="true" class="max-w-screen-xl mx-2 sm:mx-auto mt-4 py-6 sm:py-6 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12">
       <div class="flex flex-col lg:flex-row">
 
         <!-- Top trending -->
-        <div data-aos="fade-up" data-aos-delay="300" class="relative flex flex-col min-w-0 break-words bg-white w-full rounded xl:border-r border-gray-200">
+        <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="relative flex flex-col min-w-0 break-words bg-white w-full rounded xl:border-r border-gray-200">
           <div class="rounded-t mb-0 px-4 py-3 border-0">
             <div class="flex flex-wrap items-center">
               <div class="relative w-full px-4 max-w-full flex-grow flex-1">
@@ -37,7 +37,7 @@
         </div>
 
         <!-- Top gainerss -->
-        <div data-aos="fade-up" data-aos-delay="400" class="relative flex flex-col min-w-0 mt-20 sm:mt-0 break-words bg-white w-full rounded xl:border-r border-gray-200">
+        <div data-aos="fade-up" data-aos-delay="400" data-aos-once="true" class="relative flex flex-col min-w-0 mt-20 sm:mt-0 break-words bg-white w-full rounded xl:border-r border-gray-200">
           <div class="rounded-t mb-0 px-4 py-3 border-0">
             <div class="flex flex-wrap items-center">
               <div class="relative w-full px-4 max-w-full flex-grow flex-1">
@@ -71,7 +71,7 @@
         </div>
 
         <!-- Recently Added -->
-        <div data-aos="fade-up" data-aos-delay="500" class="relative flex flex-col min-w-0 mt-20 sm:mt-0 break-words bg-white w-full rounded ">
+        <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="relative flex flex-col min-w-0 mt-20 sm:mt-0 break-words bg-white w-full rounded ">
           <div class="rounded-t mb-0 px-4 py-3 border-0">
             <div class="flex flex-wrap items-center">
               <div class="relative w-full px-4 max-w-full flex-grow flex-1">

@@ -22,19 +22,19 @@
                 <div class="md:overflow-hidden">
                     <div class="px-4 py-12">
                         <div class="relative w-full md:max-w-2xl md:mx-auto text-center">
-                        <h1 data-aos="zoom-in" class="font-bold text-gray-700 text-xl sm:text-2xl md:text-5xl leading-tight mb-6">
+                        <h1 data-aos="zoom-in" data-aos-once="true" class="font-bold text-gray-700 text-xl sm:text-2xl md:text-5xl leading-tight mb-6">
                             Top Cryptocurrency Spot Exchanges
                         </h1>
-                        <p data-aos="fade-up" data-aos-delay="300" class="text-gray-600 md:text-base md:px-18">
+                        <p data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="text-gray-600 md:text-base md:px-18">
                             CryptoCoin ranks and scores exchanges based on traffic, liquidity, trading volumes, and confidence in the legitimacy of trading volumes reported
                         </p>
                         </div>
                     </div>
                     
-                    <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/star.png" class="hidden sm:block absolute ml-8 bottom-40 xl:bottom-80 left-4 xl:left-0 w-6"/>
-                    <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/ellipse-3.png" class="hidden sm:block absolute top-4 sm:top-80 right-64 sm:right-96 xl:right-[32rem] w-6"/>
-                    <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/ellipse-2.png" class="hidden sm:block absolute bottom-56 right-24 w-6"/>
-                    <img data-aos="fade-up" data-aos-delay="400" src="img/pattern/ellipse-2.png" class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"/>
+                    <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/star.png" class="hidden sm:block absolute ml-8 bottom-40 xl:bottom-80 left-4 xl:left-0 w-6"/>
+                    <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-3.png" class="hidden sm:block absolute top-4 sm:top-80 right-64 sm:right-96 xl:right-[32rem] w-6"/>
+                    <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-2.png" class="hidden sm:block absolute bottom-56 right-24 w-6"/>
+                    <img data-aos="fade-up" data-aos-delay="400" data-aos-once="true" src="img/pattern/ellipse-2.png" class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"/>
 
                     <svg class="fill-current text-white hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                         <path fill-opacity="1" d="M0,64L120,85.3C240,107,480,149,720,149.3C960,149,1200,107,1320,85.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>

@@ -6,7 +6,7 @@
   <!-- Signup -->
   <div class="relative flex mt-4">
       <div class="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto">
-      <div data-aos="fade-up" data-aos-delay="600" class="md:flex md:items-center md:justify-center w-full sm:w-auto md:h-full w-2/5 xl:w-2/5 p-8  md:p-10 lg:p-14 sm:rounded-lg md:rounded-none">
+      <div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="md:flex md:items-center md:justify-center w-full sm:w-auto md:h-full w-2/5 xl:w-2/5 p-8  md:p-10 lg:p-14 sm:rounded-lg md:rounded-none">
           <div class="max-w-md w-full space-y-8">
             <div class="text-center">
                 <h2 class="mt-6 text-3xl font-bold text-gray-900">
@@ -78,9 +78,9 @@
       <div class="sm:w-1/2 xl:w-3/5 h-screen hidden md:flex flex-auto items-center justify-center p-10 overflow-hidden text-white bg-no-repeat bg-cover relative" style="background-image: url(img/bg_login.jpeg);">
           <div class="absolute bg-gradient-to-b from-indigo-600 to-blue-500 opacity-75 inset-0 z-0"></div>
           <div class="w-full  max-w-md z-10">
-          <img data-aos="fade-right" data-aos-delay="400" src="img/signup.webp" class="-mt-4 h-72"/>
-          <div data-aos="fade-right" data-aos-delay="400" class="sm:text-4xl xl:text-5xl font-bold leading-tight mb-6">Cryptocoin</div>
-          <div data-aos="fade-up" data-aos-delay="600" class="sm:text-sm xl:text-md text-gray-200 font-normal">Sign up to access the dashboard of our website and enjoy maximum trading on popular cryptocurrencies.</div>
+          <img data-aos="fade-right" data-aos-delay="400" data-aos-once="true" src="img/signup.webp" class="-mt-4 h-72"/>
+          <div data-aos="fade-right" data-aos-delay="400" data-aos-once="true" class="sm:text-4xl xl:text-5xl font-bold leading-tight mb-6">Cryptocoin</div>
+          <div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="sm:text-sm xl:text-md text-gray-200 font-normal">Sign up to access the dashboard of our website and enjoy maximum trading on popular cryptocurrencies.</div>
           </div>
           <!--- Style fond -->
           <ul class="circles">

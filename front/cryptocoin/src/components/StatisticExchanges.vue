@@ -1,5 +1,5 @@
 <template>
-    <div data-aos="zoom-in" data-aos-delay="600" class="max-w-8xl mx-auto bg-white shadow-lg relative z-20 hidden md:block" style="margin-top: -320px; border-radius: 20px;">
+    <div data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" class="max-w-8xl mx-auto bg-white shadow-lg relative z-20 hidden md:block" style="margin-top: -320px; border-radius: 20px;">
         <div class="mb-12 xl:mb-0 mx-auto">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded ">
                 <div class="rounded-t mb-0 px-4 py-3 border-0">
