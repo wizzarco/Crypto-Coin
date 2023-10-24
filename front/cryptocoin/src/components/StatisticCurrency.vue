@@ -5,14 +5,14 @@
         <div class="mb-12 xl:mb-0 mx-auto">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded ">
                 <div class="rounded-t mb-0 px-4 py-3 border-0">
-                <div class="flex flex-wrap items-center">
-                    <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-                    <h3 class="font-semibold text-base text-sky-700">Watchlist</h3>
+                    <div class="flex flex-wrap items-center">
+                        <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                        <h3 class="font-semibold text-base text-sky-700">Watchlist</h3>
+                        </div>
+                        <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                            <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Cryptocurrency</button>
+                        </div>
                     </div>
-                    <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                        <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Cryptocurrency</button>
-                    </div>
-                </div>
                 </div>
 
                 <div class="block w-full overflow-x-auto">
@@ -20,7 +20,7 @@
                         <!-- Ce que contient la tables des cryptocurrency -->
                         <thead>
                             <tr>
-                                <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">#</th>
+                                <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Rank</th>
                                 <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
                                 <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Price</th>
                                 <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Volume 1h</th>
@@ -158,8 +158,8 @@
 
         // Calculer le rang en fonction de la page actuelle
         const startIndex = (page - 1) * response.data.length;
-        sortedCryptocurrencies.value.forEach((crypto, index) => {
-        crypto.rank = startIndex + index + 1;
+            sortedCryptocurrencies.value.forEach((crypto, index) => {
+            crypto.rank = startIndex + index + 1;
         });
 
         currentPage.value = page;
@@ -169,6 +169,6 @@
     };
 
     onMounted(() => {
-    loadPage(currentPage.value);
+        loadPage(currentPage.value);
     });
 </script>

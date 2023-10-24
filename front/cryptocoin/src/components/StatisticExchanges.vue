@@ -7,12 +7,6 @@
                     <div class="relative w-full px-4 max-w-full flex-grow flex-1">
                     <h3 class="font-semibold text-base text-sky-700">Watchlist</h3>
                     </div>
-                    <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                        <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Spot</button>
-                        <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Derivatives</button>
-                        <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">DEX</button>
-                        <button class="bg-sky-500 text-white active:bg-sky-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-2 mb-1 ease-linear transition-all duration-150" type="button">Lending</button>
-                    </div>
                 </div>
                 </div>
 
@@ -21,36 +15,40 @@
                     <!-- Ce que contient la tables des exchanges -->
                     <thead>
                         <tr>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Rank</th>
                             <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Name</th>
-                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Exchange Score</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Grade point</th>
                             <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Volume (24h)</th>
                             <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Avg. Liquidity</th>
                             <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Weekly Visits</th>
-                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Markets</th>
-                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Coins</th>
-                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Fiat Supported</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Country</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Negative Report</th>
+                            <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Market Quality</th>
                             <th class="px-6 bg-sky-50 text-sky-500 align-middle border border-solid border-sky-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">Volume Graph (7d)</th>
                         </tr>
                     </thead>
 
                     <!-- Contents de la table -->
                     <tbody>
-                        <tr v-for="cryptoexchange in cryptoexchanges" class="hover:bg-gray-100">
+                        <tr v-for="(crypto, index) in cryptocurrencies.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)" class="hover:bg-gray-100">
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ crypto.rank }}</td>
                             <th class="border-t-0 px-6 align-middle border border-solid border-sky-100 text-sm border-l-0 border-r-0 whitespace-nowrap p-4 text-left flex items-center text-sky-700">
-                            <img :src="cryptoexchange.img" class="mr-2"/><a href="#">{{ cryptoexchange.name }}</a></th>
+                                <img :src="crypto.image" class="mr-2 h-6"/>
+                                <a :href="crypto.link" target="_blank">{{ crypto.name }}</a>
+                            </th>
                             <td class="border-t-0 border border-solid border-sky-100 px-6 align-middle border-l-0 border-r-0 text-sm whitespace-nowrap p-4">
                                 <span class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
                                     <span aria-hidden class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-                                    <span class="relative">{{ cryptoexchange.score }}</span>
+                                    <span class="relative">{{ crypto.gradepoint }}</span>
                                 </span>
                             </td>
-                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.volume }}</td>
-                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.liquidity }}</td>
-                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.visits }}</td>
-                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.market }}</td>
-                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.coins }}</td>
-                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ cryptoexchange.fiat }}</td>
-                            <td class="border-t-0 border border-solid border-sky-100 x-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4"></td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ crypto.volume24h.BTC }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ crypto.rating.avg }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ crypto.rating.totalUsers }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ crypto.country }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ crypto.negativereport }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 px-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">{{ crypto.marketquality }}</td>
+                            <td class="border-t-0 border border-solid border-sky-100 x-6 align-center border-l-0 border-r-0 text-sm whitespace-nowrap p-4">À faire</td>
                         </tr>
                     </tbody>
 
@@ -77,29 +75,65 @@
     <div class="max-w-8xl mx-auto z-50 relative">
         <nav class="flex items-center justify-between border-t border-gray-200 px-4 sm:px-0">
             <div class="-mt-px flex w-0 flex-1">
-                <a href="#" class="inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
-                <svg class="mr-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
-                </svg>
-                Previous
+                <a href="#" v-if="currentPage > 1" @click.prevent="loadPage(currentPage - 1)" class="inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500 hover:text-sky-500">
+                    <svg class="mr-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
+                    </svg>
+                    Previous
+                </a>
+                <a v-else class="cursor-not-allowed inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500">
                 </a>
             </div>
+
             <div class="hidden md:-mt-px md:flex">
-                <a href="#" class="inline-flex items-center border-t-2 border-sky-500 px-4 pt-4 text-sm font-medium text-sky-600">1</a>
-                <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">2</a>
-                <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">3</a>
-                <span class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">...</span>
-                <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">8</a>
-                <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">9</a>
-                <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">10</a>
+                <template v-for="page in totalPage">
+                    <!-- Afficher les trois premières pages -->
+                    <a href="#" v-if="page <= 3" :key="page" @click.prevent="loadPage(page)"
+                        class="border-t-2 px-4 pt-4 text-sm font-medium"
+                        :class="{
+                            'border-sky-500 text-sky-600': currentPage === page,
+                            'border-transparent text-gray-500 hover:border-gray-300 hover:text-sky-600': currentPage !== page
+                        }">
+                        {{ page }}
+                    </a>
+
+                    <!-- Afficher les points de suspension avant la page actuelle -->
+                    <span v-if="page === 4 && totalPage > 6 && currentPage > 4" class="px-4 pt-4 text-sm font-medium text-gray-500">...</span>
+
+                    <!-- Afficher la page actuelle (sauf sur les trois premières pages) -->
+                    <span v-if="currentPage === page && currentPage > 3 && currentPage < totalPage - 2"
+                        class="border-t-2 px-4 pt-4 text-sm font-medium text-gray-500"
+                        :class="{
+                            'border-sky-500 text-sky-600': currentPage === page,
+                            'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700': currentPage !== page
+                        }">
+                        {{ currentPage }}
+                    </span>
+
+                    <!-- Afficher les points de suspension après la page actuelle -->
+                    <span v-if="page === currentPage + 2 && totalPage > currentPage + 3 && currentPage < totalPage - 2"
+                        class="px-4 pt-4 text-sm font-medium text-gray-500">...</span>
+
+                    <!-- Afficher les trois dernières pages -->
+                    <a href="#" v-if="page >= totalPage - 2" :key="page" @click.prevent="loadPage(page)"
+                        class="border-t-2 px-4 pt-4 text-sm font-medium"
+                        :class="{
+                            'border-sky-500 text-sky-600': currentPage === page,
+                            'border-transparent text-gray-500 hover:border-gray-300 hover:text-sky-600': currentPage !== page
+                        }">
+                        {{ page }}
+                    </a>
+                </template>
             </div>
+
             <div class="-mt-px flex w-0 flex-1 justify-end">
-                <a href="#" class="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
-                Next
-                <!-- Heroicon name: mini/arrow-long-right -->
-                <svg class="ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
-                </svg>
+                <a href="#" v-if="currentPage < totalPage" @click.prevent="loadPage(currentPage + 1)" class="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:text-sky-500">
+                    Next
+                    <svg class="ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a v-else class="cursor-not-allowed inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500">
                 </a>
             </div>
         </nav>
@@ -107,8 +141,38 @@
 </template>
 
 <script setup>
-  const cryptoexchanges = [
-      { name: 'Bitcoin', score: '9.9', volume: '€10,866,810,537', liquidity: '884', visits: '15,046,498', market: '1691', coins: '386', fiat: 'AED, ARS, AUD', img: 'img/crypto-icon/bitcoin.png'},
-      { name: 'Ethereum', score: '8.9', volume: '€1,276,198,762', liquidity: '674', visits: '6,046,498', market: '1691', coins: '211', fiat: 'AED, LIV, EUR', img: 'img/crypto-icon/ethereum.png'},
-    ]
-</script>   
+    import { ref, onMounted } from 'vue';
+    import axios from 'axios';
+
+    const cryptocurrencies = ref([]);
+    const currentPage = ref(1);
+    const totalPage = ref(29);
+    const itemsPerPage = 10;
+
+    const loadPage = async (page) => {
+        try {
+            if (page < 1 || page > totalPage.value) {
+                return;
+            }
+
+            const response = await axios.get(`http://localhost:11003/api_back/cryptos/all-exchanges`);
+            cryptocurrencies.value = response.data;
+
+            // Calculer le rang en fonction de la page actuelle
+            const startIndex = (page - 1) * itemsPerPage;
+            cryptocurrencies.value.slice(startIndex, startIndex + itemsPerPage).forEach((crypto, index) => {
+                crypto.rank = startIndex + index + 1;
+            });
+
+            currentPage.value = page;
+        } catch (error) {
+            console.error('Error loading page:', error.response ? error.response.data : error.message);
+        }
+    };
+
+    onMounted(() => {
+        loadPage(currentPage.value);
+    });
+</script>
+
+

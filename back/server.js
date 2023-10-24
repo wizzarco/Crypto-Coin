@@ -160,6 +160,52 @@ app.get('/api_back/cryptos/all-cryptocurrency', async (req, res) => {
     }
 });
 
+app.get('/api_back/cryptos/all-exchanges', async (req, res) => {
+    try {
+        const response = await axios.get('https://min-api.cryptocompare.com/data/exchanges/general', {
+            params: {
+                apikey: apiKey,
+            },
+        });
+
+        const data = response.data.Data;
+
+        const allExchangesCryptos = Object.values(data).map(exchange => {
+            return {
+                image: `https://www.cryptocompare.com${exchange.LogoUrl}`,
+                link: exchange.AffiliateURL,
+                name: exchange.Name,
+                gradepoint: exchange.GradePoints,
+                marketquality: exchange.GradePointsSplit.MarketQuality,
+                negativereport: exchange.GradePointsSplit.NegativeReportsPenalty,
+                country: exchange.Country,
+                volume24h: exchange.DISPLAYTOTALVOLUME24H,
+                rating: {
+                    one: exchange.Rating.One,
+                    two: exchange.Rating.Two,
+                    three: exchange.Rating.Three,
+                    four: exchange.Rating.Four,
+                    five: exchange.Rating.Five,
+                    avg: exchange.Rating.Avg,
+                    totalUsers: exchange.Rating.TotalUsers,
+                },
+            };
+        });
+
+        wss.clients.forEach((client) => {
+            if (client.readyState === WebSocket.OPEN) {
+                client.send(JSON.stringify({ type: 'allExchangesUpdate', payload: allExchangesCryptos }));
+            }
+        });
+
+        res.json(allExchangesCryptos);
+    } catch (error) {
+        console.error('Erreur lors de la récupération des données:', error.response ? error.response.data : error.message);
+        res.status(error.response ? error.response.status : 500).json({ error: 'Erreur lors de la récupération des données' });
+    }
+});
+
+
 // Démarrer le serveur sur le port spécifié
 server.listen(port, () => {
     console.log(`Serveur en cours d'exécution sur http://localhost:${port}`);
